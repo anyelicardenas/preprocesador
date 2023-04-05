@@ -1,0 +1,19 @@
+-var titulo="sub-titulo principal"
+-var titulos=["titulo principal", "subtitulo 1", "subtitulo 2", "subtitulo 3"]
+mixin caja(imagen,titulo,contenido)
+    .caja 
+        .caja__imagen: img(src="./pexels-simona-kidrič-2607544.jpg"+imagen)
+        .caja__contenido 
+            h3=titulo
+            p=contenido
+doctype html 
+html
+    incluide head.pug
+    body 
+        header 
+        h1 Platzigames
+        if usuario 
+            a Hola #{usuario}
+        else 
+        a.boton Registro 
+    block  contenidos 

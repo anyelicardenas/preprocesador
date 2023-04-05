@@ -1,0 +1,14 @@
+extend componentes/plantilla.pug
+block contenidos 
+    section.intro
+        .intro__imagen: img(src="./pexels-simona-kidrič-2607544.jpg")
+        .intro__contenido 
+            h2 #{titulos [0]}
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus ipsum fuga est quos adipisci accusantium veniam ducimus, sint impedit quod exercitationem, incidunt ipsa assumenda quas at. Ad, soluta pariatur.
+            a.boton Leer mas
+        main.contenido
+            +caja ('.pexels-simona-kidrič-2607544.jpg', titulos[1],'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus ipsum fuga est quos adipisci accusantium veniam ducimus, sint impedit')
+            +caja ('.pexels-simona-kidrič-2607544.jpg', titulos[2],'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus ipsum fuga est quos adipisci accusantium veniam ducimus, sint impedit')
+            +caja  ('.pexels-simona-kidrič-2607544.jpg', titulos[3],'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus ipsum fuga est quos adipisci accusantium veniam ducimus, sint impedit')
+            
+             
